@@ -1,0 +1,17 @@
+.avatar{
+    /*outline: 5px solid red;*/
+    /*width: 200px !important;*/
+    /*height: auto !important;*/
+}
+
+.podcast-image {
+    /*border-inline: 5px solid blue;*/
+    /*border: 2px solid #ddd;*/
+    /*border-radius: 4px;*/
+    /*padding: 5px;*/
+}
+
+.avatar .podcast-image {
+    /*object-fit: contain;*/
+}
+
