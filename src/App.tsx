@@ -9,7 +9,7 @@ function DriverInfo() {
 
   const fetchDriverInfo = async () => {
     try {
-      const response = await fetch('https://api.openf1.org/v1/drivers?driver_number=1&session_key=7763');
+      const response = await fetch('https://api.openf1.org/v1/drivers?driver=max');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -33,7 +33,14 @@ function DriverInfo() {
               <img src={driverInfo.headshot_url} alt="Driver Headshot" />
             </div>
         ) : (
-            <p>Loading...</p>
+            <div>
+              <p>Driver Number: waiting..</p>
+              <p>Broadcast Name: waiting..</p>
+              <p>Full Name: waiting..</p>
+              <p>Team Name: waiting..</p>
+              <p>Country Code: waiting..</p>
+              <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Poster_not_available.jpg' alt="Driver Headshot" />
+            </div>
         )}
       </div>
   );
